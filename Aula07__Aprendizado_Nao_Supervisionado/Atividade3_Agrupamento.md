@@ -413,3 +413,9 @@ Inertia K5 = {<br>
 
 $WCSS = Inertia C1 + Inertia C2 + Inertia C3 + Inertia C4 + Inertia C5 = 0 + 0 + 0 + 0 + 4 = 4$
 
+
+#### K = 6
+
+Centróides = Dados
+
+Distâncias = 0 = Inertia = WCSS
