@@ -354,12 +354,6 @@ $WCSS = Inertia C1 + Inertia C2 + Inertia C3 + Inertia C4 = 0 + 16 + 0 + 4 = 20$
 
 #### K = 5
 
-| 1 | 5 | 4 | 3 | 1 |
-| 2 | 1 | 0 | 1 | 2 |
-| 3 | 2 | 1 | 0 | 1 |
-| 4 | 6 | 3 | 6 | 1 |
-| 5 | 3 | 4 | 2 | 3 |
-| 6 | 3 | 3 | 1 | 3 |
 Centróides Iniciais = {<br>
     C1: (5, 4, 3, 1)<br>
     C2: (1, 0, 1, 2)<br>
@@ -419,3 +413,10 @@ $WCSS = Inertia C1 + Inertia C2 + Inertia C3 + Inertia C4 + Inertia C5 = 0 + 0 +
 Centróides = Dados
 
 Distâncias = 0 = Inertia = WCSS
+
+
+### Conclusão
+
+O melhor valor para k é 4, pois é onde se encontra o "cotovelo", como mostra o gráfico abaixo.
+
+![Gráfico Cotovelo KMeans](grafico_cotovelo_k_means.png)
