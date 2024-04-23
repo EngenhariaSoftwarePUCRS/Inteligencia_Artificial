@@ -1,0 +1,24 @@
+NOMES: Felipe Freitas Silva | Luiza Heller Kroeff Plá
+DATASET: DadosParaAnalise_4
+
+1. O dataset que você recebeu é estruturado, não estruturado ou semiestruturado?
+O dataset 4 é estruturado, uma vez que apresenta uma estrutura organizada, com os dados armazenados em tabelas com colunas e linhas, tornando esse banco de fácil consulta e análise. 
+
+2. Do que o dataset trata? Qual o seu conteúdo e volumetria?
+O dataset trata de informações dos sujeitos/indivíduos de nome desconhecido, focando em dados relacionadas à condições físicas, específicamente o peso, idade e altura para o cálculo do IMC (Índice de Massa Corporal). 
+CONTEÚDO: 
+ID: idenficador dos sujeitos. 
+Altura.
+Idade.
+Peso.
+IMC.
+Classificação
+VOLUMETRIA: 15 linhas.
+
+3. Para que tipos de tarefa (agrupamento, classificação, regressão, sumarização, ...) esse dataset poderia ser usado?
+Esse dataset poderia ser utilizado para:
+AGRUPAMENTO: poderiamos agrupar os indivíduos de acordo com seus diferentes dados, formando agrupamentos baseados em altura, idade, peso, IMC ou classificação. 
+CLASSIFICAÇÃO: podemos agrupar os indivíduos de acordo com a classificação que receberam pelo seu resultado no cálculo do IMC. 
+
+4. Os dados do dataset estão todos corretos e adequados para uso em um algoritmo de Machine Learning? Caso a resposta seja não, indique os erros e possíveis formas de correção. 
+Os dados estão corretos, mas deveriam ser submetidos a algumas alterações para serem adequados em um algoritmo de Machine Learning. Seu volume, por exemplo, é muito reduzido para ser considerado adequado, mais dados teriam que ser enviados para poder ser utilizado em ML. Outro ponto é o desbalanceamento que podemos ver claramente na classificação, onde há 6 indivíduos classificados como NORMAL, 4 como PESO BAIXO, 2 como OBESIDADE I, 1 como OBESIDADE II e 2 como OBESIDADE MORBIDA.
