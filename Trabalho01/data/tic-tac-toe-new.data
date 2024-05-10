@@ -960,3 +960,15 @@ b,b,b,b,b,b,b,b,x,negative
 b,b,b,b,b,b,b,x,b,negative
 b,b,b,b,b,b,x,b,b,negative
 b,b,b,b,b,x,b,b,b,negative
+b,b,b,b,b,b,b,o,x,negative
+b,b,b,b,b,b,o,b,x,negative
+b,b,b,b,b,o,b,b,x,negative
+b,b,b,b,b,b,b,x,o,negative
+b,b,b,b,b,b,o,x,b,negative
+b,b,b,b,b,o,b,x,b,negative
+b,b,b,b,b,b,x,b,o,negative
+b,b,b,b,b,b,x,o,b,negative
+b,b,b,b,b,o,x,b,b,negative
+b,b,b,b,b,x,b,b,o,negative
+b,b,b,b,b,x,b,o,b,negative
+b,b,b,b,b,x,o,b,b,negative
