@@ -1,7 +1,11 @@
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 
-from trabalho01 import get_game_state
+from trabalho01 import (
+    CELL_B, CELL_O, CELL_X,
+    O_GANHOU, TEM_JOGO, VELHA, X_GANHOU,
+    get_game_state, has_won, to_cell,
+)
 
 
 app = FastAPI()
@@ -24,8 +28,20 @@ def main(board: str):
             board[i] = int(board[i])
         else:
             board[i] = board[i].lower()
+
+    board_cells = [to_cell(cell) for cell in board]
+    if has_won(CELL_X, board_cells):
+        correct_output = X_GANHOU
+    elif has_won(CELL_O, board_cells):
+        correct_output = O_GANHOU
+    elif CELL_B in board_cells:
+        correct_output = TEM_JOGO
+    else:
+        correct_output = VELHA
+
     try:
         return {
+            "correctOutput": correct_output,
             "kNN": get_game_state(board, "kNN"),
             "MLP": get_game_state(board, "MLP"),
             "DTree": get_game_state(board, "DTree"),
