@@ -1,0 +1,8 @@
+Tema 1: IA em Jogos
+São usadas há muito tempo como inimigos e NPCs em jogos, e mais recentemente para vencer jogos por meio de aprendizado por reforço, mas poderiam ser utilizadas na criação de jogos (em casos mais complexos do que jogos "endless" como runners ou de geração processual de mapas). Certamente com algum feedback humano seria possível uma IA combinar, por exemplo Mario e Sonic em um único jogo de plataforma interessante com bosses responsivos e com mecânicas mescladas.
+
+Tema 2: IA na sala de aula
+Para deixar o ensino mais personalizado e inclusivo. Hoje em dia, é muito dificil para alunos que não são o que se considera "normais" de terem um aprendizado efetivo, o que acaba gerando evasão escolar e uma piora significativa em sua qualidade de vida. Alunos, por exemplo, autistas, T21, com problemas de baixa ou nenhuma visão, problemas auditivos, dentre outros. Uma inteligência artificial que conseguisse adaptar o ensino para cada uma dessas individualidades certamente ajudaria muito para que mais pessoas pudessem ter acesso a uma vida mais decente sem ter de recorrer a tutores especializados que são, por vezes, inacessíveis as familias que já tem custos grandes com estas crianças.
+
+
+Autores: Felipe Freitas e Luiza Heller
