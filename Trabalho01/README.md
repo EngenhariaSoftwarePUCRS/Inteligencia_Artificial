@@ -73,6 +73,17 @@ Ative o ambiente virtual com o comando abaixo:
 conda activate ia-trabalho01
 ```
 
+#### Alternativa - Sem (Mini)Conda
+
+```sh
+python -m venv ia-trabalho01
+```
+
+Windows
+```sh
+ia-trabalho01\Scripts\activate
+```
+
 Para instalar os requisitos do projeto, execute o comando abaixo:
 
 ```bash
@@ -114,6 +125,10 @@ Em um último cenário, pode-se abrir o arquivo `trabalho01.py` e executar o có
 - `data/tic-tac-toe-minimum.data`: Arquivo de dados do jogo da velha com apenas 16 instâncias de cada classe.
 - `data/tic-tac-toe-full.data`: Arquivo de dados do jogo da velha com todos os dados utilizados.
 
+### requirements.txt
+
+Arquivo contendo as dependências do projeto.
+
 ### main.py
 
 Script principal do projeto. Contém uma API simples utilizando [FastAPI](https://fastapi.tiangolo.com/) que permite a integrar o modelo de Machine Learning com uma interface web.
@@ -125,3 +140,7 @@ Script que contém as funções utilizadas para treinar o modelo de Machine Lear
 ### Trabalho01.ipynb
 
 Notebook utilizado para desenvolver o modelo de Machine Learning por meio da plataforma [Google Colab](https://colab.research.google.com/).
+
+### test_integration.py
+
+Script de testes de integração que verifica se a API está funcionando corretamente.
