@@ -116,6 +116,15 @@ curl http://localhost:8080/X,b,O,x,1,o,-1,X,O
 
 Em um último cenário, pode-se abrir o arquivo `trabalho01.py` e executar o código diretamente no terminal, alterando o "`game_state`" de teste da linha 377, por meio do comando `python trabalho01.py`.
 
+## Como testar
+
+Para testar o projeto, execute o comando abaixo:
+Observação: O projeto deve estar rodando localmente na porta `8080`.
+
+```bash
+python test_integration.py
+```
+
 ## Arquivos do Projeto
 
 ### data Folder
