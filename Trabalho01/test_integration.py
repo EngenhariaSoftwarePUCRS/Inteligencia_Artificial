@@ -3,11 +3,15 @@ import unittest
 
 from trabalho01 import TEM_JOGO, VELHA, X_GANHOU
 
+
+API_URL = "http://localhost:8080"
+
+
 class TestTicTacToaAPI(unittest.TestCase):
     
     def setUp(self):
         # Configuração inicial de cada teste
-        self.base_url = "http://localhost:8080"
+        self.base_url = API_URL
 
 
     def _test_board_successful(self,
@@ -60,6 +64,17 @@ class TestTicTacToaAPI(unittest.TestCase):
 
 if __name__ == "__main__":
     try:
+        requests.options(API_URL)
         unittest.main()
+    except requests.exceptions.ConnectionError:
+        # Italics and bold red
+        print("\033[3m", "\033[1;31m")
+        print("API is not running.")
+        # Yellow
+        print("\033[33m", end="")
+        print("Please start the API before running the tests.")
+        print("To start the API, run 'python main.py' in the terminal.")
+        print("\033[0m")
+        exit(1)
     except Exception as e:
         print(f"An error occurred: {str(e)}")
