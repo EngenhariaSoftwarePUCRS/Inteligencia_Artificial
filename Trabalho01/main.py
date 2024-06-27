@@ -22,7 +22,7 @@ app.add_middleware(
 def main(board: str):
     board = board.split(",")
     if len(board) != 9:
-        return {"error": "Invalid board size"}
+        raise HTTPException(status_code=400, detail="Invalid board size")
     for i in range(9):
         if board[i] in ["-1", "0", "1"]:
             board[i] = int(board[i])
@@ -47,7 +47,7 @@ def main(board: str):
             "DTree": get_game_state(board, "DTree"),
         }
     except Exception as e:
-        raise HTTPException(status_code=400, detail=str(e))
+        raise HTTPException(status_code=500, detail=str(e))
 
 
 if __name__ == "__main__":
